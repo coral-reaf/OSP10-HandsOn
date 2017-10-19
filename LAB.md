@@ -24,3 +24,10 @@
 ### ***1-2-2. Continue to overviewをクリックします。***
 　![project-Deploy1](./2-2-3.jpg)
 
+Before starting the remaining labs, make sure that your packages are up to date.
+
+Update the packages on all of the nodes:
+[Controller node] [Compute nodes] [Storage node]
+# yum -y update
+If the update contains a new kernel, reboot the nodes:
+# reboot
