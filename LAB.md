@@ -1,9 +1,29 @@
 # 1.OSP10 ハンズオン
 
 ## 1-1.目的
-  Red Hat が提供するOSP10のハンズオン実習を
-   
-### ***1-1-1. OpenShift のWebコンソールにログインし、"New Project" をクリックします。***  
+  Red Hat が提供するOSP10をハンズオンにより実習体験することを目的としたドキュメントです。
+  ハンズオンは、Packstackを使ったインストールを実施します。
+
+## 1-2.環境
+　環境は以下を前提としています。
+　・Workstation：SSHの踏み台ホスト
+　　外部 : workstation-<guid>.rhpds.opentlc.com ---> SSH 接続用
+　　内部 : workstation.example.com　192.168.0.5
+　・Controller：
+　　外部 : https://ctrl-<guid>.rhpds.opentlc.com ---> Horizon 接続用
+　　内部 : 192.168.0.20
+　・Compute Node 01 : 192.168.0.30
+　・Compute Node 02 : 192.168.0.31
+　・Storage : 192.168.0.40
+　・LDAP : 192.168.0.50
+ 
+すべての操作は、お手元の端末から、踏み台のWorkstationに接続し、そこから各OSPを構成する
+端末にSSHログオンして実施します。どの端末に対する操作であるかは、[] で示しています。
+[Controller]
+
+
+
+### ***2-1. OpenShift のWebコンソールにログインし、"New Project" をクリックします。***  
  
    <img src="2-1-1.jpg" alt="attach:cat" title="attach:cat" width="700">  
    　　   　※Webコンソールのアドレスについては別途ご確認ください。  
